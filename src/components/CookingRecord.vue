@@ -32,30 +32,66 @@ export default {
   font-family: 'karakaze';
   src: url('../assets/fonts/ShigotoMemogaki-Regular-1-01.ttf');
 }
-.cooking-record {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 0.5rem;
-  box-shadow: 2px 2px 3px;
+
+
+@media screen and (min-width: 767px) {
+  .cooking-record {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 3px;
+  }
+
+  .content {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 0.5rem;
+  }
+
+  .recorded-time {
+    margin-left: 1rem;
+    text-align: left;
+  }
+  
+  .record-image {
+    width: 100%;
+    margin: 1rem 0 0;
+  }
 }
 
-.content {
-  width: 80%;
-  margin: 0 auto 1rem;
-  padding: 0 1rem;
-  font-size: 1.2rem;
-  background-color: rgba(255, 255, 255,0.5);
-  border-radius: 0.5rem;
-}
+@media screen and (max-width: 766px) {
+  .cooking-record {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 3px;
+  }
 
-.recorded-time {
-  margin-left: 1rem;
-}
-.record-image {
-  width: 100%;
-  margin: 1rem 0 0;
+  .content {
+    width: 80%;
+    margin: 0 auto 1rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255,0.5);
+    border-radius: 0.5rem;
+  }
+
+  .recorded-time {
+    margin-left: 1rem;
+    text-align: left;
+  }
+
+  .record-image {
+    width: 100%;
+    margin: 1rem 0 0;
+  }
 }
 
 .main_dish {
