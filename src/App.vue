@@ -68,12 +68,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Helvetica Neue",
-    "Arial",
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    "Meiryo",
-    "sans-serif";
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
 }
 
 @media screen and (min-width: 767px) {
